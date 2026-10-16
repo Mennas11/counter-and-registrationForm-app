@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: rosybrown;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 10%, #f8dff0 0, transparent 30%),
+    radial-gradient(circle at 90% 80%, #e4ddff 0, transparent 30%),
+    rosybrown;
+}
+
+button,
+input {
+  font: inherit;
+  color: white;
+}
+
+button {
+  background: none;
+  outline: none;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px 10px;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  border:2px dotted white;
+}
+
+.app-container {
+  width: min(1050px, 92%);
+  margin: 0 auto;
+  padding: 55px 0;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #a05ba8;
+  background: #f2e4f7;
+  border-radius: 50px;
+  padding: 7px 15px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin: 16px 0 10px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.hero h1 span {
+  color: #d75b9d;
+}
+
+.hero p {
+  color: #81778d;
+  font-size: 15px;
+  margin: 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #eee5f4;
+  border-radius: 26px;
+  padding: 32px;
+  box-shadow: 0 15px 45px rgba(89, 59, 112, 0.08);
+}
+
+.card-label {
+  color: #a18ba9;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.card h2 {
+  font-size: 25px;
+  margin: 0 0 8px;
+  letter-spacing: -0.6px;
+}
+
+.card-description {
+  color: #91879b;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 25px;
+}
+
+.heart-circle {
+  width: 105px;
+  height: 105px;
+  margin: 30px auto 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffe4f1, #f8c6e2);
+  box-shadow: 0 10px 25px rgba(215, 91, 157, 0.15);
+  font-size: 45px;
+}
+
+.like-count {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 25px;
+}
+
+.like-count span {
+  color: #d75b9d;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 13px;
+  padding: 13px 18px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  flex: 1;
+  color: white;
+  background: linear-gradient(135deg, #df6eaa, #c55bc5);
+  box-shadow: 0 7px 18px rgba(197, 91, 197, 0.2);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 24px rgba(197, 91, 197, 0.3);
+}
+
+.btn-secondary {
+  color: #79668d;
+  background: #f1ebf8;
+}
+
+.form-group {
+  margin-bottom: 17px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #574b63;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #e8deef;
+  border-radius: 12px;
+  outline: none;
+  background: #fdfbff;
+  color: #393047;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #b4a9be;
+}
+
+.form-group input:focus {
+  border-color: #d276b0;
+  box-shadow: 0 0 0 4px rgba(210, 118, 176, 0.12);
+}
+
+.register-btn {
+  width: 100%;
+  margin-top: 5px;
+  padding: 14px;
+}
+
+.submitted-box {
+  margin-top: 24px;
+  padding: 20px;
+  background: #faf3ff;
+  border: 1px solid #eee0f8;
+  border-radius: 16px;
+  overflow-wrap: anywhere;
+}
+
+.submitted-box h3 {
+  margin: 0 0 14px;
+  font-size: 15px;
+  color: #a052a5;
+}
+
+.submitted-box p {
+  font-size: 13px;
+  margin: 9px 0;
+  color: #6d6178;
+}
+
+.footer {
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  margin-top: 35px;
+}
+
+@media (max-width: 700px) {
+  .app-container {
+    padding: 35px 0;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+}
